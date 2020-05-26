@@ -1,7 +1,7 @@
-// Import MySQL connection.
+// Import MySQL connection
 const connection = require("../config/connection.js");
 
-// Helper function for SQL syntax.
+// Helper function for SQL syntax
 function printQuestionMarks(num) {
     let arr = [];
 
@@ -30,7 +30,7 @@ function objToSql(ob) {
     return arr.toString();
 }
 
-// Object for all our SQL statement functions.
+// Object for SQL statement functions
 const orm = {
     selectAll: (table, cb) => {
         let queryString = "SELECT * FROM " + table + ";";
