@@ -1,5 +1,5 @@
 // Import MySQL connection.
-const connection = require("../config/connection.js");
+const connection = require("./config/connection.js");
 
 // Helper function for SQL syntax.
 function printQuestionMarks(num) {
@@ -35,47 +35,35 @@ const orm = {
     selectAll: (table, cb) => {
         let queryString = "SELECT * FROM " + table + ";";
         connection.query(queryString, (err, result) => {
-            if (err) {
-                throw err;
-            }
+            if (err) throw err;
+            console.log(result);
             cb(result);
         });
     },
     insertOne: (table, cols, vals, cb) => {
         let queryString = "INSERT INTO " + table;
-
         queryString += " (";
         queryString += cols.toString();
         queryString += ") ";
         queryString += "VALUES (";
         queryString += printQuestionMarks(vals.length);
         queryString += ") ";
-
         console.log(queryString);
-
         connection.query(queryString, vals, (err, result) => {
-            if (err) {
-                throw err;
-            }
-
+            if (err) throw err;
             cb(result);
         });
     },
     // An example of objColVals would be {name: cheeserburger, devoured: false}
     updateOne: (table, objColVals, condition, cb) => {
         let queryString = "UPDATE " + table;
-
         queryString += " SET ";
         queryString += objToSql(objColVals);
         queryString += " WHERE ";
         queryString += condition;
-
         console.log(queryString);
         connection.query(queryString, (err, result) => {
-            if (err) {
-                throw err;
-            }
-
+            if (err) throw err;
             cb(result);
         });
     }
