@@ -19,24 +19,19 @@ $(() => {
             location.reload();
         });
     });
-
     $(".change-devour").on("click", (event) => {
         let id = $(this).data("id");
-        let burgerUpdate = $(this).data("burgerupdate");
-
-        let burgerUpdateState = {
+        let changeDevourState = {
             devour: true,
         };
 
         // Send the PUT request.
         $.ajax("/api/burgers/" + id, {
             type: "PUT",
-            data: burgerUpdateState
+            data: changeDevourState,
         }).then(() => {
-            console.log("changed devour to", burgerUpdate);
             // Reload the page to get the updated list
             location.reload();
-        }
-        );
+        });
     });
 });
