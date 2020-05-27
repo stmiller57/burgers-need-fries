@@ -1,31 +1,46 @@
-<h1>Burgers Need Fries!</h1>
-
-<h2>Burgers available to devour</h2>
-
-<ul>
-    {{#each burgers}}
-    {{#unless devoured}}
-    {{> burgers/burgersToEat devoured=true}}
-    {{/unless}}
-    {{/each}}
-</ul>
-
-<h2>You already ate these burgers</h2>
-
-<ul>
-    {{#each burgers}}
-    {{#if devoured}}
-    {{> burgers/burgersToEat devoured=false}}
-    {{/if}}
-    {{/each}}
-</ul>
-
-<h2>Add a Burger</h2>
-<form class="create-form">
-
-    <div class="form-group">
-        <label for="cheese">Burger:</label>
-        <input type="text" id="cheese" name="burger_name">
+{{!-- Page header --}}
+<nav class="navbar navbar-success">
+    <h1 class="text-center">Bring Me My Burger</h1>
+    <h3 class="text-center">And don't forget the fries!</h3>
+</nav>
+<div class="row">
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title text-center">Ready to eat</h2>
+                <h4 class="card-title text-center">
+                    {{#each burgers}}
+                    {{#unless devoured}}
+                    {{> burgers/burgersToEat devoured=true}}
+                    {{/unless}}
+                    {{/each}}
+                </h4>
+            </div>
+        </div>
     </div>
-    <button type="submit">Add a Burger</button>
-</form>
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title text-center">You already ate these</h2>
+                <h4 class="card-title text-center">
+                    {{#each burgers}}
+                    {{#if devoured}}
+                    {{> burgers/burgersToEat devoured=false}}
+                    {{/if}}
+                    {{/each}}
+                </h4>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="text-center">
+    <h2>Add a Burger</h2>
+    <form class="create-form">
+
+        <div class="form-group">
+            <label for="cheese">Burger:</label>
+            <input type="text" id="cheese" name="burger_name">
+        </div>
+        <button type="submit">Add a Burger</button>
+    </form>
+</div>
