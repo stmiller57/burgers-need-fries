@@ -21,7 +21,7 @@ node server.js
 The user will be told what port the app is being served on and can go to `localhost:` in the web browser.
 
 The application is also located on Heroku at this link:
-https://blooming-fjord-50965.herokuapp.com/
+https://warm-river-46221.herokuapp.com/
 
 ## Development
 The app currently has "Devour It" buttons next to each burger. Those buttons don't function right now. I would like to add that functionality in the next few days and then include this assignment on my portfolio. 
