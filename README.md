@@ -7,7 +7,7 @@ This app, created with mySQL, Node, Express, Handlebars and a homemade ORM, logs
 4. [Contributing](#contributing)
 5. [License](#license)
 
-![](assets/img/BringMeMyBurger.gif.gif)
+![](assets/img/BringMeMyBurger.gif)
 
 ## Description
 Few things are a better for a meat-lover than a tasty burger. Keep track of all your favorites by adding them to your log. Burgers you want to eat are displayed on the left, while burgers you have already eaten are displayed on the right. 
