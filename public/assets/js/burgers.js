@@ -6,7 +6,7 @@ $(() => {
         event.preventDefault();
 
         let newBurger = {
-            burger_name: $("#cheese").val().trim(),
+            burger_name: $("#addBurger").val().trim(),
         };
 
         // Send the POST request.

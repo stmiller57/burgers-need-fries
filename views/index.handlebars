@@ -1,11 +1,14 @@
 {{!-- Page header --}}
-<nav class="navbar navbar-success">
-    <h1 class="text-center">Bring Me My Burger</h1>
-    <h3 class="text-center">And don't forget the fries!</h3>
-</nav>
-<div class="row">
+<h1 class="text-center text-white">Bring Me My Burger</h1>
+<h3 class="text-center text-white">And don't forget the fries!</h3>
+<div class="text-center">
+    <img src="assets/img/bigKahuna.png" class="rounded img-fluid" alt="Big Kahuna Burger">
+</div>
+
+{{!-- Two-column row for burgers --}}
+<div class="row bg-primary" id="burgerRow">
     <div class="col-sm-6">
-        <div class="card">
+        <div class="card bg-secondary text-white">
             <div class="card-body">
                 <h2 class="card-title text-center">Ready to eat</h2>
                 <h4 class="card-title text-center">
@@ -19,7 +22,7 @@
         </div>
     </div>
     <div class="col-sm-6">
-        <div class="card">
+        <div class="card bg-secondary text-white">
             <div class="card-body">
                 <h2 class="card-title text-center">You already ate these</h2>
                 <h4 class="card-title text-center">
@@ -33,14 +36,17 @@
         </div>
     </div>
 </div>
-<div class="text-center">
-    <h2>Add a Burger</h2>
-    <form class="create-form">
-
-        <div class="form-group">
-            <label for="cheese">Burger:</label>
-            <input type="text" id="cheese" name="burger_name">
-        </div>
-        <button type="submit">Add a Burger</button>
-    </form>
-</div>
+{{!-- Form to add a burger --}}
+<div class="row bg-primary" id="burgerForm">
+    <div class="col-sm-12 text-center">
+        <div class="card bg-secondary text-white">
+            <div class="card-body">
+                <h2>Add a Burger</h2>
+                <form class="create-form">
+                    <div class="form-group">
+                        <label>Next burger:</label>
+                        <input type="text" id="addBurger" name="burger_name">
+                    </div>
+                    <button class="btn btn-success text-white" type="submit">Coming up!</button>
+                </form>
+            </div>
