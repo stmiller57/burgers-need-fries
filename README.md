@@ -2,7 +2,7 @@
 This app, created with mySQL, Node, Express, Handlebars and a homemade ORM, logs burgers you want to eat. 
 ## Table of Contents
 1. [Description](#description)
-2. [Future development](#FutureDevelopment)
+2. [Development](#development)
 3. [Installation](#installation)
 4. [Contributing](#contributing)
 5. [License](#license)
@@ -23,7 +23,7 @@ The user will be told what port the app is being served on and can go to `localh
 The application is also located on Heroku at this link:
 https://blooming-fjord-50965.herokuapp.com/
 
-## Future development
+## Development
 The app currently has "Devour It" buttons next to each burger. Those buttons don't function right now. I would like to add that functionality in the next few days and then include this assignment on my portfolio. 
 
 ## Installation
