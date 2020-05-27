@@ -1,4 +1,4 @@
-// Set up MySQL connection.
+// Set up MySQL connection
 const mysql = require("mysql");
 
 const connection = mysql.createConnection({
@@ -9,7 +9,7 @@ const connection = mysql.createConnection({
     database: "burgers_db"
 });
 
-// Make connection.
+// Make connection
 connection.connect((err) => {
     if (err) {
         console.error("error connecting: " + err.stack);
