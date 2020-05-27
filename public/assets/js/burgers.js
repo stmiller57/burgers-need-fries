@@ -19,6 +19,8 @@ $(() => {
             location.reload();
         });
     });
+
+    // This code below currently doesn't work. I know I need to flip the devoured state from false to true but wasn't able to get it working with the button
     $(".change-devour").on("click", (event) => {
         let id = $(this).data("id");
         let changeDevourState = {

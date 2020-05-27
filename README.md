@@ -1,5 +1,5 @@
 # burgers-need-fries
-This app, created with mySQL, Node, Express, Handlebars and a homemade ORM, logs burgers you want to eat. 
+This app, created with mySQL, Node, Express, Handlebars and a homemade ORM, logs burgers you want to eat plus those you have already devoured. 
 ## Table of Contents
 1. [Description](#description)
 2. [Development](#development)
@@ -10,7 +10,7 @@ This app, created with mySQL, Node, Express, Handlebars and a homemade ORM, logs
 ![](public/assets/img/BringMeMyBurger.gif)
 
 ## Description
-Few things are a better for a meat-lover than a tasty burger. Keep track of all your favorites by adding them to your log. Burgers you want to eat are displayed on the left, while burgers you have already eaten are displayed on the right. 
+Few things are better for a meat-lover than a tasty burger. Keep track of all your favorites by adding them to your log. Burgers you want to eat are displayed on the left, while burgers you have already eaten are displayed on the right. 
 
 The application can be started with this command:
 
