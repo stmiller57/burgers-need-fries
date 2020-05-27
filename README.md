@@ -1,15 +1,16 @@
 # burgers-need-fries
-This app, created with MySQL, Node, Express, Handlebars and a homemade ORM, logs burgers you want to eat. 
+This app, created with mySQL, Node, Express, Handlebars and a homemade ORM, logs burgers you want to eat. 
 ## Table of Contents
 1. [Description](#description)
-2. [Installation](#installation)
-3. [Contributing](#contributing)
-4. [License](#license)
+2. [Future development](#FutureDevelopment)
+3. [Installation](#installation)
+4. [Contributing](#contributing)
+5. [License](#license)
 
 ![](assets/img/BringMeMyBurger.gif.gif)
 
 ## Description
-Few things are a better for a meat-lover than a tasty burger. Keep track of all your favorites by adding them to your log. 
+Few things are a better for a meat-lover than a tasty burger. Keep track of all your favorites by adding them to your log. Burgers you want to eat are displayed on the left, while burgers you have already eaten are displayed on the right. 
 
 The application can be started with this command:
 
@@ -22,10 +23,12 @@ The user will be told what port the app is being served on and can go to `localh
 The application is also located on Heroku at this link:
 https://blooming-fjord-50965.herokuapp.com/
 
+## Future development
+The app currently has "Devour It" buttons next to each burger. Those buttons don't function right now. I would like to add that functionality in the next few days and then include this assignment on my portfolio. 
 
 ## Installation
 
-Run npm install to include all necessary dependencies.
+Run `npm install` to include all necessary dependencies.
 
 ## Contributing
 
