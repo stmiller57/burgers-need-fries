@@ -6,7 +6,7 @@ This app, created with MySQL, Node, Express, Handlebars and a homemade ORM, logs
 3. [Contributing](#contributing)
 4. [License](#license)
 
-![](assets/NoteTaker.gif)
+![](assets/img/BringMeMyBurger.gif.gif)
 
 ## Description
 Few things are a better for a meat-lover than a tasty burger. Keep track of all your favorites by adding them to your log. 
